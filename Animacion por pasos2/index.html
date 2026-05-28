@@ -1,0 +1,144 @@
+<html>
+<head>
+    <title>VISITA PERÚ</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        .contenedor{
+            width:800px;
+            height:300px;
+            border:2px solid black;
+            margin:30px auto;
+            position:relative;
+            overflow:hidden;
+        }
+
+        .marco1,.marco2,.marco3,.marco4{
+            width:200px;
+            height:300px;
+            position:absolute;
+            overflow:hidden;
+        }
+
+        .marco1{
+            left:0;
+            animation:marco1 3s forwards;
+        }
+
+        .marco2{
+            left:200px;
+            animation:marco2 4s forwards;
+        }
+
+        .marco3{
+            left:400px;
+            animation:marco3 5s forwards;
+        }
+
+        .marco4{
+            left:600px;
+            animation:marco4 6s forwards;
+        }
+
+        .marco1 img,
+        .marco2 img,
+        .marco3 img,
+        .marco4 img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        @keyframes marco1{
+            0%{
+                top:-300px;
+                transform:rotateY(180deg);
+            }
+
+            50%{
+                top:300px;
+            }
+
+            100%{
+                top:0;
+            }
+        }
+
+        @keyframes marco2{
+            0%{
+                top:-300px;
+                transform:rotateY(180deg);
+            }
+
+            50%{
+                top:300px;
+            }
+
+            100%{
+                top:0;
+            }
+        }
+
+        @keyframes marco3{
+            0%{
+                top:-300px;
+                transform:rotateY(180deg);
+            }
+
+            50%{
+                top:300px;
+            }
+
+            100%{
+                top:0;
+            }
+        }
+
+        @keyframes marco4{
+            0%{
+                top:-300px;
+                transform:rotateY(180deg);
+            }
+
+            50%{
+                top:300px;
+            }
+
+            100%{
+                top:0;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <div class="marco1">
+            <img src="img/mar.jpg">
+        </div>
+
+        <div class="marco2">
+            <img src="img/costa.jpg">
+        </div>
+
+        <div class="marco3">
+            <img src="img/sierra.jpg">
+        </div>
+
+        <div class="marco4">
+            <img src="img/selva.jpg">
+        </div>
+
+    </div>
+    <a href="../index1.html" class="volver">VOLVER</a>
+</body>
+</html>
