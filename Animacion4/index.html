@@ -1,0 +1,162 @@
+<html>
+<head>
+<title>Animacion3</title>
+
+<style>
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .contenedor{
+        width: 1000px; 
+        height: 300px;
+        position: relative;
+        margin: 50px auto;
+        border: 3px solid black;
+        background-color: rgb(0, 0, 0);
+        overflow: hidden;
+    }
+
+    .marco1, .marco2, .marco3, .marco4, .marco5{
+        width: 200px;
+        height: 300px;
+        border: 2px solid rgb(5, 255, 213);
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .marco1 img, .marco2 img, .marco3 img, .marco4 img, .marco5 img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .marco1{
+        left: 0px;
+        animation: marco1 5s 1 forwards;
+    }
+     @keyframes marco1{
+        0%{
+            top: -600px;
+            left: -200px;
+        }
+        50%{
+            top: 0px;
+            left: -200px;
+        }
+        100%{
+            top: 0px;
+            left: 0px;
+        }
+    }
+    .marco2{
+        left: 200px;
+        animation: marco2 5s 1 forwards;
+        animation-delay: 0.3s;
+    }
+     @keyframes marco2{
+        0%{
+            top: -600px;
+            left: 0px;
+        }
+        50%{
+            top: 0px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 200px;
+        }
+    }
+    .marco3{
+        left: 400px;
+        animation: marco3 5s 1 forwards;
+        animation-delay: 0.6s;
+    }
+     @keyframes marco3{
+        0%{
+            top: -600px;
+            left: 0px;
+        }
+        50%{
+            top: 0px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 400px;
+        }
+    }
+    .marco4{
+        left: 600px;
+        animation: marco4 5s 1 forwards;
+        animation-delay: 0.9s;
+    }
+     @keyframes marco4{
+        0%{
+            top: -600px;
+            left: 0px;
+        }
+        50%{
+            top: 0px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 600px;
+        }
+    }
+    .marco5{
+        left: 800px;
+        animation: marco5 5s 1 forwards;
+        animation-delay: 1.2s;
+    }
+    @keyframes marco5{
+        0%{
+            top: -600px;
+            left: 0px;
+        }
+        50%{
+            top: 0px;
+            left: 0px;
+        }
+        100%{
+            top: 0px;
+            left: 800px;
+        }
+    }
+    .marco1, .marco2, .marco3, .marco4, .marco5{
+                box-shadow: 0px 0px 20px rgb(5, 255, 213);
+            }
+    .titulo{
+        position: absolute;
+        
+            }
+     
+</style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <div class="marco1">
+        <img src="img/img1.jpg"></div>
+    <div class="marco2">
+        <img src="img/img2.jpg"></div>
+    <div class="marco3">
+        <img src="img/img3.jpg"></div>
+    <div class="marco4">
+        <img src="img/img4.jpg"></div>
+    <div class="marco5">
+        <img src="img/img5.jpg"></div>
+
+    <div class="titulo">TECNOLOGIAS DE DESARROLLO WEB</div>
+</div>
+
+<a href="../index1.html" class="volver">VOLVER</a>
+
+</body>
+</html>
