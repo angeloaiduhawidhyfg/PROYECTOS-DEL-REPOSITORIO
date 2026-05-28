@@ -1,0 +1,126 @@
+<html>
+    <head>
+
+    <title></title>
+    <style>
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 1px solid black;
+                margin: 0 auto;
+                position: relative;
+                overflow: hidden;
+            }
+            .contenedor cielo{
+                width: 100%;
+            }
+            .cuadrito{
+                width: 100px;
+                height: 100px;
+                background-color: rgba(255, 0, 0, 0);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation: cuadrito 5s infinite;
+
+            }
+            .abeja{
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+            
+            @keyframes cuadrito{
+                0%{
+                    top: 100px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+
+                33.3%{
+                    top: 0px;
+                    left: 350px;
+                    rotate: 5deg;
+                }
+                66.6%{
+                    top: 200px;
+                    left: 350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top: 100px;
+                    left: 800px;
+                    rotate: 5deg;
+                }
+            }
+            .pradera{
+                width: 800px;
+                height: 300px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: -1;
+            }
+            .cielo{
+                width: 800px;
+                height: 300px;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                z-index: -2;
+            }
+            .cuadrito2{
+                width: 100px;
+                height: 100px;
+                background-color: rgba(255, 0, 0, 0);
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                animation: cuadrito 3s infinite;
+
+            }
+            .abeja2{
+                width: 100%;
+                position: absolute;
+                z-index: 1;
+            }
+            
+            @keyframes cuadrito2{
+                0%{
+                    top: 100px;
+                    left: -100px;
+                    rotate: 45deg;
+                }
+
+                33.3%{
+                    top: 0px;
+                    left: 350px;
+                    rotate: 5deg;
+                }
+                66.6%{
+                    top: 200px;
+                    left: 350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top: 100px;
+                    left: 800px;
+                    rotate: 5deg;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <img class="pradera "src="img/pasto.png" alt="">
+            <img class="cielo" src="img/cielo.png" alt="">
+            <div class="cuadrito">
+                <img class="abeja "src="img/img.webp" alt="">
+            </div>
+            <div class="cuadrito2">
+                <img class="abeja2 "src="img/img.webp" alt="">
+            </div>
+        </div>
+            <a href="../index1.html" class="volver">VOLVER</a>
+    </body>
+</html>
